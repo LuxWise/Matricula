@@ -3,15 +3,13 @@ package Matricula;
 public class Grupo {
     private int codigo = 0;
     private int cupo = 0;
+    private String consecutivoMateria = "";
 
-    private String consecutivo = "";
-
-    public Grupo(int codigo, int cupo, String consecutivo) {
+    public Grupo(int codigo, int cupo, String consecutivoMateria) {
         this.codigo = codigo;
         this.cupo = cupo;
-        this.consecutivo = consecutivo;
+        this.consecutivoMateria = consecutivoMateria;
     }
-
 
     public int getCodigo() {
         return codigo;
@@ -29,11 +27,11 @@ public class Grupo {
         this.cupo = cupo;
     }
 
-    public String getConsecutivo() {
-        return consecutivo;
+    public String getConsecutivoMateria() {
+        return consecutivoMateria;
     }
 
-    public void setConsecutivo(String consecutivo) {
-        this.consecutivo = consecutivo;
+    public void setConsecutivoMateria(String consecutivoMateria) {
+        this.consecutivoMateria = consecutivoMateria;
     }
 }

@@ -2,14 +2,16 @@ package Matricula;
 
 public class Asignatura {
 
-    private int codigo;
-    private String nombre;
-    private String jornada;
+    private int codigo = 0;
+    private String nombre = "";
+    private String jornada = "";
+    private  String franja = "";
 
-    public Asignatura(int codigo, String nombre, String jornada) {
+    public Asignatura(int codigo, String nombre, String jornada, String franja) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.jornada = jornada;
+        this.franja = franja;
     }
 
     public int getCodigo() {
@@ -34,5 +36,13 @@ public class Asignatura {
 
     public void setJornada(String jornada) {
         this.jornada = jornada;
+    }
+
+    public String getFranja() {
+        return franja;
+    }
+
+    public void setFranja(String franja) {
+        this.franja = franja;
     }
 }

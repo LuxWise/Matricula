@@ -1,12 +1,12 @@
 package Matricula;
 
-public class Estudiante {
+public class Profesor {
     private String nombre = "";
     private String apellido = "";
-    private String email = "";
-    private int codigo =  0;
+    private  String email ="";
+    private int codigo = 0;
 
-    public Estudiante(String nombre, String apellido, String email, int codigo) {
+    public Profesor(String nombre, String apellido, String email, int codigo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
